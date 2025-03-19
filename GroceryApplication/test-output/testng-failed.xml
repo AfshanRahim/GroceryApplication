@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mytestsuite]">
+  <listeners>
+    <listener class-name="listeners.Listener"/>
+    <listener class-name="listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="myTesting(failed)">
+    <classes>
+      <class name="testscripts.Subcategory_Test">
+        <methods>
+          <include name="verifyAddNewSubcategoryWithValidDetails"/>
+          <include name="initaliseBrowser"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.Subcategory_Test -->
+    </classes>
+  </test> <!-- myTesting(failed) -->
+</suite> <!-- Failed suite [Mytestsuite] -->
